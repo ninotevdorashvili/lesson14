@@ -21,6 +21,9 @@
             li{
                 a{
                     @include font ($fonthel,25px,$colorwh);
+                    &:hover {
+                        font-weight: bold;
+                    }
                 }
             }
         }
@@ -59,6 +62,10 @@
                     display: flex;
                     font-weight: lighter;
                     padding-right: 10px;
+                    &:hover {
+                        color: #236d7a;
+                        font-weight: bold;
+                    }
                 }
                 &:last-child {
                     @media (max-width:890px) {
@@ -68,6 +75,10 @@
                         font-size: 60px;
                     }
                     @include font ($fonthel,138px,#74c7d5);
+                    &:hover {
+                        color: #236d7a;
+                        font-weight: bold;
+                    }
                     
                 }
                 

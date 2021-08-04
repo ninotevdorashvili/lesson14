@@ -103,6 +103,9 @@ a {
   font-size: 25px;
   color: #fff;
 }
+.header .menu .menuul li a:hover {
+  font-weight: bold;
+}
 
 .page1 .bg {
   width: 100%;
@@ -168,6 +171,10 @@ a {
     text-align: center;
   }
 }
+.page1 .bg .good h2:first-child:hover {
+  color: #236d7a;
+  font-weight: bold;
+}
 .page1 .bg .good h2:last-child {
   font-family: "Helvetica";
   font-size: 138px;
@@ -182,4 +189,8 @@ a {
   .page1 .bg .good h2:last-child {
     font-size: 60px;
   }
+}
+.page1 .bg .good h2:last-child:hover {
+  color: #236d7a;
+  font-weight: bold;
 }/*# sourceMappingURL=global.css.map */
