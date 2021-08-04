@@ -1,0 +1,11 @@
+@mixin d-flex ($disp:flex, $jus:space-between, $align:center) {
+    display: $disp;
+    justify-content: $jus;
+    align-items: $align;
+}
+@mixin bgimage ($size:cover,$rep:no-repeat,$pos:center) {
+    
+    background-size: $size;
+    background-repeat: $rep;
+    background-position: $pos;
+}

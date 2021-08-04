@@ -1,0 +1,21 @@
+.header {
+    .menu{
+        width:100%;
+        @include d-flex;
+        .menuul{
+            width: 360px;
+            @include d-flex;
+        }
+    }
+}
+.page1 {
+    .bg{
+        width: 100%;
+        height: 700px;
+        background-image: url('../images/bg.png');
+        @include bgimage;
+        .good{
+            @include d-flex (flex,center,center);
+        }
+    }
+}
