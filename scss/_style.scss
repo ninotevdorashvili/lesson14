@@ -1,21 +1,77 @@
 .header {
+    background-color: #74c7d5;
+    padding: 0 15px;
     .menu{
-        width:100%;
+        background-color: #74c7d5;
+        width:$sizew;
         @include d-flex;
+        .fa-bars {
+            @media (max-width:920px) {
+                display: block;
+            }
+            display: none;
+        }
         .menuul{
-            width: 360px;
+            @media (max-width:920px) {
+                display: none;
+
+            }
+            width: 450px;
             @include d-flex;
+            li{
+                a{
+                    @include font ($fonthel,25px,$colorwh);
+                }
+            }
         }
     }
 }
 .page1 {
     .bg{
-        width: 100%;
+        width: $sizew;
         height: 700px;
         background-image: url('../images/bg.png');
         @include bgimage;
+        @include d-flex (flex,center,center);
         .good{
-            @include d-flex (flex,center,center);
+            @media (max-width:400px) {
+                flex-direction: column;
+            }
+            @include widsize (500px,100%);
+            background-color: rgb(255, 255, 255, 0.5);
+            color: #74c7d5;
+            display: flex;
+            align-items: center;
+            padding: 33px 43px;
+            h2 {
+                &:first-child {
+                    @media (max-width:890px) {
+                        font-size: 40px;
+                    }
+                    @media (max-width:485px) {
+                        font-size: 30px;
+                        text-align: center;
+                    }                   
+                    @include font ($fonthel,50px,#74c7d5);
+                    line-height: 50px;
+                    text-align: right;
+                    align-items: center;
+                    display: flex;
+                    font-weight: lighter;
+                    padding-right: 10px;
+                }
+                &:last-child {
+                    @media (max-width:890px) {
+                        font-size: 90px;
+                    }
+                    @media (max-width:485px) {
+                        font-size: 60px;
+                    }
+                    @include font ($fonthel,138px,#74c7d5);
+                    
+                }
+                
+            }
         }
     }
 }

@@ -9,3 +9,17 @@
     background-repeat: $rep;
     background-position: $pos;
 }
+@mixin pos($top, $left, $transf) {
+    top: $top;
+    left: $left;
+    transform: $transf;
+}
+@mixin font ($fam, $size, $color) {
+    font-family: $fam;
+    font-size: $size;
+    color: $color;
+}
+@mixin widsize ($max,$width) {
+    max-width: $max;
+    width: $width;
+}

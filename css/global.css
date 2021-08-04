@@ -48,7 +48,20 @@ a {
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica.eot");
+  src: url("../fonts/Helvetica.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica.woff2") format("woff2"), url("../fonts/Helvetica.woff") format("woff"), url("../fonts/Helvetica.ttf") format("truetype"), url("../fonts/Helvetica.svg#Helvetica") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.header {
+  background-color: #74c7d5;
+  padding: 0 15px;
+}
 .header .menu {
+  background-color: #74c7d5;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,8 +73,16 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
+.header .menu .fa-bars {
+  display: none;
+}
+@media (max-width: 920px) {
+  .header .menu .fa-bars {
+    display: block;
+  }
+}
 .header .menu .menuul {
-  width: 360px;
+  width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,6 +92,16 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 920px) {
+  .header .menu .menuul {
+    display: none;
+  }
+}
+.header .menu .menuul li a {
+  font-family: "Helvetica";
+  font-size: 25px;
+  color: #fff;
 }
 
 .page1 .bg {
@@ -80,8 +111,6 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-.page1 .bg .good {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,4 +120,66 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.page1 .bg .good {
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #74c7d5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 33px 43px;
+}
+@media (max-width: 400px) {
+  .page1 .bg .good {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.page1 .bg .good h2:first-child {
+  font-family: "Helvetica";
+  font-size: 50px;
+  color: #74c7d5;
+  line-height: 50px;
+  text-align: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: lighter;
+  padding-right: 10px;
+}
+@media (max-width: 890px) {
+  .page1 .bg .good h2:first-child {
+    font-size: 40px;
+  }
+}
+@media (max-width: 485px) {
+  .page1 .bg .good h2:first-child {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.page1 .bg .good h2:last-child {
+  font-family: "Helvetica";
+  font-size: 138px;
+  color: #74c7d5;
+}
+@media (max-width: 890px) {
+  .page1 .bg .good h2:last-child {
+    font-size: 90px;
+  }
+}
+@media (max-width: 485px) {
+  .page1 .bg .good h2:last-child {
+    font-size: 60px;
+  }
 }/*# sourceMappingURL=global.css.map */
