@@ -1,8 +1,8 @@
 .header {
-    background-color: #74c7d5;
+    background-color: $colorbl;
     padding: 0 15px;
     .menu{
-        background-color: #74c7d5;
+        background-color: $colorbl;
         width:$sizew;
         @include d-flex;
         .fa-bars {
@@ -55,7 +55,7 @@
                         font-size: 30px;
                         text-align: center;
                     }                   
-                    @include font ($fonthel,50px,#74c7d5);
+                    @include font ($fonthel,50px,$colorbl);
                     line-height: 50px;
                     text-align: right;
                     align-items: center;
@@ -63,7 +63,7 @@
                     font-weight: lighter;
                     padding-right: 10px;
                     &:hover {
-                        color: #236d7a;
+                        color: $colorhov;
                         font-weight: bold;
                     }
                 }
@@ -74,9 +74,9 @@
                     @media (max-width:485px) {
                         font-size: 60px;
                     }
-                    @include font ($fonthel,138px,#74c7d5);
+                    @include font ($fonthel,138px,$colorbl);
                     &:hover {
-                        color: #236d7a;
+                        color: $colorhov;
                         font-weight: bold;
                     }
                     
